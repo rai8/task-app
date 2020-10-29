@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-//import uniqid from 'uniqid'
+
 import Overview from './components/Overview'
 
 const App = () => {
@@ -11,15 +11,13 @@ const App = () => {
     //console.log(e.target.value)
     setTask(e.target.value)
   }
-  /* const addTask = () => {
-    setTasks([...tasks, task])
-  } */
+
   const handleSubmit = e => {
     e.preventDefault()
     if (task === '') return
     setTasks([].concat(tasks, task))
     setTask('')
-    console.log(task)
+    //console.log(task)
   }
   return (
     <div>

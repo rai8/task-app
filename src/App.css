@@ -20,3 +20,9 @@ form button {
   box-shadow: 1px 2px 2px #23e4fc;
   margin-top: 0;
 }
+.list-render {
+  justify-content: space-between;
+}
+#icon {
+  float: right;
+}
