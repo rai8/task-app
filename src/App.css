@@ -26,3 +26,11 @@ form button {
 #icon {
   float: right;
 }
+.input-area {
+  width: 300px;
+  margin: 50px auto;
+}
+.input-area button {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

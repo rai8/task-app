@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
+import Input from './components/Input'
 
 import Overview from './components/Overview'
 
@@ -21,6 +22,7 @@ const App = () => {
   }
   return (
     <div>
+      <Input />
       <div className='container'>
         <form onSubmit={handleSubmit}>
           <div className='form-group'>
@@ -28,8 +30,8 @@ const App = () => {
             <button className='btn btn-primary btn-block'>Add task</button>
           </div>
         </form>
+        <Overview tasks={tasks} />
       </div>
-      <Overview tasks={tasks} />
     </div>
   )
 }

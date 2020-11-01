@@ -1,15 +1,14 @@
 import React from 'react'
-import uuid from 'react-uuid'
-
-const Overview = ({ tasks }) => {
+import '../App.css'
+const Tasks = ({ tasks }) => {
   return (
     <>
       <div className='task-list'>
         <ul className='list-group'>
           {tasks.map(task => {
             return (
-              <li key={uuid()} className='list-group-item list-render'>
-                <span>{task} </span>{' '}
+              <li key={task.id} className='list-group-item list-render'>
+                <span>{task.text} </span>{' '}
                 <span
                   id='icon'
                   onClick={() => {
@@ -27,4 +26,4 @@ const Overview = ({ tasks }) => {
   )
 }
 
-export default Overview
+export default Tasks
